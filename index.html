@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>尚和手机</title>
+    <style media="screen">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul{
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .clearfix{
+      zoom:1;
+    }
+    .clearfix::before,
+    .clearfix::after{
+      content: "";
+      display: block;
+      visibility: hidden;
+      height: 0;
+      clear: both;
+    }
+      .head{
+        height: 117px;
+        background: url("./picture/head_bg.png")
+      }
+      .head-body{
+        width: 980px;
+        height: 117px;
+        padding-top: 17px;
+        margin: 0 auto;
+      }
+      .head-body-b,.head-body-text{
+        float: right;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+
+      }
+      .head-body-b{
+        width: 30px;
+        background: url("./picture/input_r1_c2.png")
+      }
+      .head-body-text{
+        width: 170px;
+        background: url("./picture/input_r1_c1.png");
+        outline-style: none;
+      }
+      .head-body-lianjie ul li{
+        width: 130px;
+        height: 53px;
+        float: left;
+        margin-top: 19px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 53px;
+        background: url("./picture/nav_bg.png") no-repeat right;
+      }
+      .head-body-lianjie ul li a{
+        color: black;
+      }
+      .head-body-lianjie ul li a:hover{
+        color: red;
+      }
+      .datu{
+        width: 980px;
+        height: 597px;
+        margin: 0 auto;
+      }
+      .xiaodian{
+        width: 34px;
+        height: 14px;
+        margin: 15px auto;
+      }
+      .xiaodianxia{
+        height: 30px;
+        background-color: #fbfbfb;
+        border-top: solid #efefef 1px;
+        border-bottom: solid #efefef 1px;
+      }
+      .xiaodianxia-dakuang{
+        width: 980px;
+        height: 30px;
+        margin: 0 auto;
+      }
+      .xiaodianxia-dakuang-wenzi{
+       height: 30px;
+       text-align: center;
+       line-height: 30px;
+       float: left;
+      }
+      .xiaodianxia-dakuang-tupian{
+        width: 87px;
+        height: 17px;
+        margin-top: 6px;
+        float: right;
+      }
+      .foot{
+        width: 980px;
+        height: 228px;
+        margin: 0 auto;
+        margin-top:15px;
+        margin-bottom: 49px;
+        /*padding: 13px 8px;*/
+      }
+      .foot-1,.foot-2,.foot-3{
+        height: 202px;
+        padding: 13px 8px;
+        /*background: url("./2.png") no-repeat;*/
+        float: left;
+        border: 1px solid #e4e4e4;
+        /*border-top: 13px;*/
+      }
+      .foot-1{
+        width: 293px;
+      }
+      .foot-2{
+        width: 358px;
+        margin-left: 14px;
+      }
+      .foot-3{
+        width: 247px;
+        margin-left: 14px;
+      }
+      .foot-1-head,.foot-2-head,.foot-3-head{
+       height: 25px;
+       color: #bedc83;
+       background: url("./picture/2.png") no-repeat left center;
+       padding-left: 18px;
+       line-height: 25px;
+       font-weight: bold;
+      }
+      .foot-2-body,.foot-3-body{
+        margin-top: 3px;
+        padding-left: 18px;
+        font-size: 14px;
+        /*color: #666666;*/
+        /*border-bottom: 1px dashed #e4e4e4;*/
+      }
+      .foot-2-body ul li{
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px dashed #e4e4e4;
+        padding-right: 18px;
+      }
+      /*.foot-3-body{
+        border-left: 5px solid #bedc83;
+      }*/
+      .foot-3-body ul li{
+        margin-top: 10px;
+        height: 15px;
+        line-height: 15px;
+        border-left: 5px solid #bedc83;
+        padding-left: 10px;
+      }
+      .foot-3-body ul li a,.foot-2-body ul li a{
+        color: #666666;
+      }
+      .foot-3-body ul li a:hover,.foot-2-body ul li a:hover{
+        color: red;
+      }
+      .foot-3-body-haoma{
+        /*height: 30px;*/
+        margin-top: 35px;
+        color:#666666;
+      }
+      .end{
+        height: 308px;
+        background: url("./picture/foot.png");
+      }
+      .end-zhongxin{
+        height: 308px;
+        width: 980px;
+        margin: 0 auto;
+      }
+      .end-zhongxin-baiwenzi ul li a{
+        padding: 0 25px 0 18px;
+        font-weight: bold;
+        color: #eee;
+        float: left;
+        margin-top: 18px;
+
+      }
+      .end-zhongxin-xiaowenzi{
+        /*margin-top: 50px;*/
+        padding-top: 16px;
+        clear: both;
+        padding-left: 18px;
+        display: inline-block;
+        /*color: #666666;*/
+      }
+      .end-zhongxin-1,.end-zhongxin-2,.end-zhongxin-3,.end-zhongxin-4,.end-zhongxin-5,.end-zhongxin-6,.end-zhongxin-7,.end-zhongxin-8{
+        display: inline-block;
+
+      }
+      .end-zhongxin-1,.end-zhongxin-2,.end-zhongxin-3,.end-zhongxin-4,.end-zhongxin-5,.end-zhongxin-6,.end-zhongxin-7,.end-zhongxin-8{
+        width: 110px;
+        height: 110px;
+        font-size: 13px;
+        float: left;
+        /*padding:0 10px;*/
+      }
+      .end-zhongxin-xiabu{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="head-body">
+        <img src="./picture/logo.png" alt="" />
+        <button class="head-body-b"></button>
+        <input type="text" class="head-body-text">
+        <div class="head-body-lianjie">
+          <ul>
+            <li><a href="#">首 页</a></li>
+            <li><a href="#">平板电脑</a></li>
+            <li><a href="#">智能手机</a></li>
+            <li><a href="#">服务支持</a></li>
+            <li><a href="#">关于尚和</a></li>
+            <li><a href="#">配 件</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <div class="datu">
+      <img src="./picture/banner.png" alt=""/>
+
+    </div>
+    <div class="xiaodian">
+     <img src="./picture/point.png" alt="" />
+    </div>
+    <div class="xiaodianxia">
+      <div class="xiaodianxia-dakuang">
+        <div class="xiaodianxia-dakuang-wenzi">
+          <strong>最新公告：</strong>
+          尚合Aone智能手机入网证已经获工信部门审批下发。尚和官方
+         </div>
+        <div class="xiaodianxia-dakuang-tupian">
+         <img src="./picture/share.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="foot-1">
+        <div class="foot-1-head">新品发布</div>
+        <div class="foot-1-body">
+         <img src="./picture/666.png" alt="" />
+         </div>
+      </div>
+      <div class="foot-2">
+        <div class="foot-2-head">新闻中心
+          <div class="foot-2-head-gengduo" style="float:right">
+            <span style="color:#666666;">更多</span>
+          </div>
+         </div>
+        <div class="foot-2-body">
+           <ul>
+             <li><a href="#" style="color:red;font-weight:bold;">致歉公告</a></li>
+             <li><a href="#">首批尚合Aonet已全部售罄</a></li>
+             <li><a href="#">【媒体报道】国产高性价比 尚合Aonet四核手机评测</a></li>
+             <li><a href="#">我公司产品已经通过了国家强制性产品C3认证</a></li>
+             <li><a href="#">尚合Aone智能手机已经获得工信部门审批下发</a></li>
+             <li><a href="#">我公司通过IS09-001:2008国际管理体系认证</a></li>
+           </ul>
+         </div>
+      </div>
+      <div class="foot-3">
+        <div class="foot-3-head">
+          技术与支持
+        </div>
+        <div class="foot-3-body">
+          <ul>
+            <li><a href="#">售后服务</a></li>
+            <li><a href="#">售后服务</a></li>
+            <li><a href="#">联保网点</a></li>
+            <li><a href="#">常见问题FAQ？</a></li>
+          </ul>
+          <div class="foot-3-body-haoma">
+          深圳汇聚众合科技发展有限公司<br>
+          服务热线：400-633-7922
+          </div>
+         </div>
+      </div>
+    </div>
+    <div class="end">
+     <div class="end-zhongxin">
+      <div style="float:right">
+         <img src="./picture/canvas_r4_c3.png" alt="" />
+        </div>
+      <div  class="end-zhongxin-baiwenzi">
+         <ul>
+           <li><a href="#">尚和首页</a></li>
+           <li><a href="#">智能手机</a></li>
+           <li><a href="#">平板电脑</a></li>
+           <li><a href="#">配件中心</a></li>
+           <li><a href="#">服务与支持</a></li>
+           <li><a href="#">关于我们</a></li>
+           <li><a href="#">新闻中心</a></li>
+           <li><a href="#">常用链接</a></li>
+         </ul>
+      </div>
+      <div class="end-zhongxin-xiaowenzi">
+        <div class="end-zhongxin-1">
+         <ul>
+           <li><a href="#" style="color:#666666">返回首页</a></li>
+         </ul>
+        </div>
+        <div class="end-zhongxin-2">
+          <ul>
+            <li><a href="#" style="color:#666666">Aone-T</a></li>
+            <li><a href="#" style="color:#666666">Aone</a></li>
+          </ul>
+        </div>
+        <div class="end-zhongxin-3">
+          <ul>
+            <li><a href="#" style="color:#666666">尚PAD S200</a></li>
+            <li><a href="#" style="color:#666666">尚PAD S100</a></li>
+            <li><a href="#" style="color:#666666">尚PAD SH-Q7</a></li>
+            <li><a href="#" style="color:#666666">尚PAD SH-Q5</a></li>
+          </ul>
+        </div>
+        <div class="end-zhongxin-4">
+          <ul>
+            <li><a href="#" style="color:#666666">Aone 智能手机</a></li>
+          </ul>
+        </div>
+        <div class="end-zhongxin-5">
+          <ul>
+            <li><a href="#" style="color:#666666">售后服务</a></li>
+            <li><a href="#" style="color:#666666">联保网点</a></li>
+            <li><a href="#" style="color:#666666">投诉与建议</a></li>
+            <li><a href="#" style="color:#666666">常见问题</a></li>
+            <li><a href="#" style="color:#666666">订单查询</a></li>
+            <li><a href="#" style="color:#666666">下载专区</a></li>
+          </ul>
+        </div>
+        <div class="end-zhongxin-6">
+          <ul>
+            <li><a href="#" style="color:#666666">公司介绍</a></li>
+            <li><a href="#" style="color:#666666">企业文化</a></li>
+            <li><a href="#" style="color:#666666">工作机会</a></li>
+            <li><a href="#" style="color:#666666">法律声明</a></li>
+            <li><a href="#" style="color:#666666">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="end-zhongxin-7">
+          <ul>
+            <li><a href="#" style="color:#666666">公司新闻</a></li>
+            <li><a href="#" style="color:#666666">媒体报道</a></li>
+            <li><a href="#" style="color:#666666">行业动态会</a></li>
+          </ul>
+        </div>
+        <div class="end-zhongxin-8">
+         <ul>
+           <li><a href="#" style="color:#666666">百度</a></li>
+           <li><a href="#" style="color:#666666">google</a></li>
+           <li><a href="#" style="color:#666666">新浪微博</a></li>
+         </ul>
+        </div>
+      </div>
+      <div class="end-zhongxin-xiabu">
+        2011-2012版权所有 深圳市汇聚众和科技发展有限公司（上合：gshgaajhka） 联系电话：400-823-823<br>
+        经营许可证编号：hjsahjhs<br>
+        <img src="./picture/fuhao.png" alt="" />
+      </div>
+     </div>
+    </div>
+  </body>
+</html>
